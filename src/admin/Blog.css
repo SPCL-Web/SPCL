@@ -1,0 +1,86 @@
+.dashboard-item {
+    height: 100px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    background-color: #ffefba;
+    border-bottom: 1px solid rgb(85, 79, 79);
+
+}
+
+.dashboard-item1 {
+    height: 55px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-color: #ff9a9e;
+    transform: translateY(10px);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(85, 79, 79);
+
+}
+
+
+.dashboard {
+    height: 55px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    width: 270px;
+    background-color: #ffefba;
+    border-bottom: 1px solid rgb(85, 79, 79);
+    margin: 20px 0;
+
+}
+
+
+.container{
+    display: flex;
+}
+
+
+.table-row {
+    margin-left: 18px;
+  
+  }
+  
+  .table-data {
+    height: 50px;
+    width: 150px;
+  
+    padding: 10px;
+  
+  
+  }
+  
+  .table-data2 {
+    width: 150px;
+    height: 50px;
+    /* padding: 20px; */
+    margin: 10px;
+  
+  }
+  
+.heading-input input{
+    width: 350px;
+    height: 100px;
+    font-size: 15px;
+}
+.paragraph-input textarea{
+  
+    font-size: 15px;
+}
+
+.all-blog{
+    /* padding-top: 4700px; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
