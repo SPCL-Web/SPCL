@@ -44,4 +44,71 @@
   color: #fff;
 }
 
-/*--------------faq-------------*/
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .price .items {
+    padding: 30px;
+  }
+  .price h1 {
+    font-size: 40px;
+  }
+  .price h1 span {
+    font-size: 18px;
+  }
+  .price p {
+    margin: 30px 0;
+  }
+  .faq .container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price .items {
+    padding: 20px;
+  }
+  .price h1 {
+    font-size: 35px;
+  }
+  .price h1 span {
+    font-size: 16px;
+  }
+  .price p {
+    margin: 20px 0;
+  }
+  .faq button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .faq h2 {
+    font-size: 18px;
+  }
+  .faq p {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .price .items {
+    padding: 10px;
+  }
+  .price h1 {
+    font-size: 30px;
+  }
+  .price h1 span {
+    font-size: 14px;
+  }
+  .price p {
+    margin: 15px 0;
+  }
+  .faq .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .faq h2 {
+    font-size: 16px;
+  }
+  .faq p {
+    padding: 10px;
+  }
+}

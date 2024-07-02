@@ -44,6 +44,7 @@ const CoursesCard = () => {
               </div>
               <div className='price'>
                 <h3>
+                
                   {val.priceAll} 
                 </h3>
               </div>

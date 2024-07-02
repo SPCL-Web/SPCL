@@ -68,15 +68,104 @@
   font-size: 20px;
   font-weight: 500;
 }
-/*----------awrapper------------*/
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .aboutHome .right {
+    padding: 60px 30px;
+  }
+
+  .aboutHome .item h2 {
+    font-size: 18px;
+  }
+
+  .aboutHome .item p {
+    font-size: 14px;
+  }
+
+  .awrapper h1 {
+    font-size: 40px;
+  }
+
+  .awrapper h3 {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .aboutHome {
+    text-align: center;
+  }
+
   .aboutHome .container {
     flex-direction: column-reverse;
+    padding: 20px;
   }
-  .aboutHome .row {
-    width: 100%;
+
+  .aboutHome .right {
+    padding: 40px 20px;
   }
+
+  .aboutHome .items {
+    margin-top: 20px;
+  }
+
+  .aboutHome img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .aboutHome .item h2 {
+    font-size: 16px;
+  }
+
+  .aboutHome .item p {
+    font-size: 13px;
+  }
+
   .awrapper {
-    height: 50vh;
+    height: 40vh;
+    padding: 50px 10px;
+    text-align: center;
+  }
+
+  .awrapper h1 {
+    font-size: 30px;
+  }
+
+  .awrapper h3 {
+    font-size: 16px;
+  }
+
+  .awrapper img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutHome .right {
+    padding: 20px;
+  }
+
+  .aboutHome .item h2 {
+    font-size: 14px;
+  }
+
+  .aboutHome .item p {
+    font-size: 12px;
+  }
+
+  .awrapper {
+    height: 30vh;
+    padding: 30px 5px;
+  }
+
+  .awrapper h1 {
+    font-size: 25px;
+  }
+
+  .awrapper h3 {
+    font-size: 14px;
   }
 }

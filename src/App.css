@@ -150,15 +150,71 @@ p {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
-@media screen and (max-width: 768px) {
-  .grid2,
-  .grid3,
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
   .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid3 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .back h1 {
+    font-size: 80px;
+  }
+  .back h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid, .grid2, .grid3 {
     grid-template-columns: repeat(2, 1fr);
   }
   .back {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
+  }
+  .back h1 {
+    font-size: 60px;
+  }
+  .back h2 {
+    font-size: 14px;
+  }
+  .row {
+    width: 100%;
+  }
+  button {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid, .grid2, .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .back {
+    padding-top: 60%;
+    height: 70vh;
+  }
+  .back h1 {
+    font-size: 40px;
+  }
+  .back h2 {
+    font-size: 12px;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }

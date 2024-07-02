@@ -58,3 +58,59 @@ form .flexSB input:nth-child(1) {
     width: 100%;
   }
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .contacts .right {
+    padding: 50px;
+  }
+  .contacts h1 {
+    font-size: 25px;
+  }
+  .contacts .box p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts .container {
+    flex-direction: column;
+  }
+  .contacts iframe {
+    height: 50vh;
+  }
+  .contacts .right {
+    padding: 30px;
+  }
+  .contacts h1 {
+    font-size: 22px;
+  }
+  .contacts h3 {
+    font-size: 18px;
+  }
+  .contacts .row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts .right {
+    padding: 20px;
+  }
+  .contacts h1 {
+    font-size: 20px;
+  }
+  .contacts h3 {
+    font-size: 16px;
+  }
+  .contacts .box p {
+    font-size: 15px;
+  }
+  .contacts textarea,
+  .contacts input {
+    padding: 10px;
+  }
+  form .flexSB input:nth-child(1) {
+    margin-right: 5px;
+  }
+}

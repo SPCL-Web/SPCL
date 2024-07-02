@@ -61,3 +61,55 @@
   font-family: sans-serif;
   font-size: 38px;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .team .details h2 {
+    font-size: 18px;
+  }
+  .team .details p {
+    font-size: 14px;
+  }
+  .overlay {
+    padding: 15px;
+  }
+  .overlay i {
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team .details h2 {
+    font-size: 16px;
+  }
+  .team .details p {
+    font-size: 13px;
+  }
+  .team .details {
+    padding: 20px;
+  }
+  .overlay {
+    padding: 10px;
+  }
+  .overlay i {
+    margin: 2px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team .details h2 {
+    font-size: 14px;
+  }
+  .team .details p {
+    font-size: 12px;
+  }
+  .team .details {
+    padding: 15px;
+  }
+  .overlay {
+    padding: 5px;
+  }
+  .overlay i {
+    margin: 1px;
+  }
+}

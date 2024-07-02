@@ -104,3 +104,69 @@ header ul li a:hover {
 .active{
   border-bottom: 2px solid rgb(192, 170, 170) !important;
 }
+
+/*--------header------------*/
+@media screen and (max-width: 992px) {
+  header {
+    margin: 0 15px;
+  }
+  header li {
+    margin-right: 20px;
+  }
+  .start {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+    padding: 20px 30px;
+  }
+  header {
+    margin: 0;
+    background-color: #1eb283;
+    position: relative;
+  }
+  header .nav {
+    flex-direction: column;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  header ul {
+    padding: 20px 0;
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #1eb283;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .start {
+    padding: 15px 20px;
+  }
+  .toggle {
+    font-size: 25px;
+  }
+  .mobile-nav {
+    top: 5vh;
+  }
+}

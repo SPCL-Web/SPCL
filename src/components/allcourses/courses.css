@@ -117,6 +117,94 @@
 .online .box:hover h1 {
   color: #fff;
 }
-/*-------------online---------*/
-@media screen and (max-width: 768px) {
+/*-------------media queries---------*/
+@media (max-width: 1200px) {
+  .coursesCard {
+    flex-direction: row;
+  }
+  .coursesCard .items {
+    width: 45%; /* Adjust the width for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .coursesCard {
+    flex-direction: column;
+  }
+  .coursesCard .items {
+    width: 100%; /* Full width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .coursesCard .text h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .coursesCard .rate i {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .coursesCard {
+    padding: 10px;
+  }
+  .coursesCard .text h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .coursesCard .text {
+    margin-left: 10px;
+  }
+  .coursesCard .img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+  .coursesCard .rate {
+    margin: 10px 0;
+  }
+  .coursesCard .price {
+    margin: 20px 0;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .online .box {
+    padding: 20px 15px;
+  }
+  .online .img {
+    width: 70px;
+    height: 70px;
+  }
+  .online h1 {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 25px;
+  }
+  .online span {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .online .box {
+    padding: 15px 10px;
+  }
+  .online .img {
+    width: 60px;
+    height: 60px;
+  }
+  .online h1 {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 22px;
+  }
+  .online span {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
 }

@@ -77,10 +77,89 @@
     font-size: 15px;
 }
 
-.all-blog{
-    /* padding-top: 4700px; */
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .dashboard-item, .dashboard-item1 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .dashboard {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .table-data, .table-data2 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .heading-input input, .paragraph-input textarea {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-item {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .dashboard-item1 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .dashboard {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .table-data, .table-data2 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .heading-input input, .paragraph-input textarea {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-item {
+        font-size: 1rem; /* Smaller font size */
+        height: 80px; /* Adjust height */
+    }
+
+    .dashboard-item1 {
+        font-size: 1rem; /* Smaller font size */
+        height: 45px; /* Adjust height */
+    }
+
+    .dashboard {
+        font-size: 1.2rem; /* Smaller font size */
+        height: 45px; /* Adjust height */
+    }
+
+    .container {
+        margin: 10px; /* Reduced margin */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .table-data, .table-data2 {
+        width: 100%; /* Full width for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .heading-input input, .paragraph-input textarea {
+        width: 100%; /* Full width for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .all-blog {
+        padding-top: 10px; /* Adjusted padding */
+    }
 }
 
