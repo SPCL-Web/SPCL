@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { earnPoints_Number, flagResult, getServerData } from '../helper/helper'
 import { useSelector } from 'react-redux';
 import './QuizStyle.css'
+import '../components/contact/ContactAdmin.css'
 export default function ResultTable() {
     const { questions : { queue ,answers}, result : { result, userId}}  = useSelector(state => state)
 
@@ -11,7 +12,7 @@ export default function ResultTable() {
     const earnPoints = earnPoints_Number(result, answers, 10)
     const [data, setData] = useState([])
 
-    console.log("data", data);
+    // console.log("data", data);
     const flag = flagResult(totalPoints, earnPoints)
 
 

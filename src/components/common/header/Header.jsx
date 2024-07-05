@@ -60,16 +60,22 @@ const Header = () => {
             {/* {
               auth?.user?.role === 1
             } */}
-          
+
             {/* <li>
               <NavLink to="/blog">Visit Blog</NavLink>
             </li> */}
-           {
-            auth?.user?.role === 1 &&
-            <li>
-            <NavLink to="/dashboard">Admin Dashboard</NavLink>
-          </li>
-           }
+            {
+              auth?.user?.role === 1 &&
+              <li>
+                <NavLink to="/dashboard">Admin Dashboard</NavLink>
+              </li>
+            }
+
+            {
+              <li>
+              <NavLink to="/quiz">Join Quiz</NavLink>
+            </li>
+            }
           </ul>
           <div className="start">
             {
