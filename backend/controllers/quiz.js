@@ -2,7 +2,7 @@
 
 import Questions from "../model/questionSchema.js";
 import Results from "../model/resultSchema.js";
-import questions, { answers } from '../config/data.js';
+// import questions, { answers } from '../config/data.js';
 
 /** get all questions */
 export async function getQuestions(req, res) {
@@ -17,7 +17,18 @@ export async function getQuestions(req, res) {
 /** insert all questions */
 export async function insertQuestions(req, res) {
     try {
-        await Questions.insertMany({ questions, answers });
+
+
+        const newQuestion = req.body.questions;
+        const updatedDoc = await Questions.findOneAndUpdate(
+            {},
+            { $push: { questions: newQuestion } },
+            { new: true }
+        );
+
+
+        // const {questions ,answers} = req.body;
+        // await Questions.insertMany({ questions, answers });
         res.json({ msg: "Data Saved Successfully...!" });
     } catch (error) {
         res.json({ error });
@@ -66,3 +77,18 @@ export async function dropResult(req, res) {
         res.json({ error });
     }
 }
+
+
+export const addAnswer = async (req, res) => {
+    try {
+      const newAnswer = req.body.answer;
+      const updatedDoc = await Questions.findOneAndUpdate(
+        {},
+        { $push: { answers: newAnswer } },
+        { new: true }
+      );
+      return res.status(200).json(updatedDoc);
+    } catch (error) {
+      return res.status(500).json({ message: 'Error adding answer', error });
+    }
+  };

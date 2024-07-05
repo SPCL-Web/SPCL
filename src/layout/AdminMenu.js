@@ -12,8 +12,8 @@ const AdminMenu = () => {
                     <NavLink to="/dashboard/create-blog" className="list-group-item list-group-item-action dashboard-item">Manage Blog</NavLink>
                     <NavLink to="/all-blog" className="list-group-item list-group-item-action dashboard-item">All Blog</NavLink>
                     <NavLink to="/contact-admin" className="list-group-item list-group-item-action dashboard-item">Contact Info</NavLink>
-                    {/* <NavLink to="/quiz" className="list-group-item list-group-item-action dashboard-item ">Manage Quiz</NavLink>
-                    <NavLink to="/result" className="list-group-item list-group-item-action dashboard-item">Quiz Result</NavLink> */}
+                    <NavLink to="/quiz-admin" className="list-group-item list-group-item-action dashboard-item ">Manage Quiz</NavLink>
+                    <NavLink to="/result" className="list-group-item list-group-item-action dashboard-item">Quiz Result</NavLink>
 
                 </div>
 

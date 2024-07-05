@@ -37,8 +37,8 @@ export default function QuizResult() {
     }
 
   return (
-    <div className='container'>
-        <h1 className='title text-light'>Quiz Application</h1>
+    <div className=''>
+        <h1 className='title text-light'>Quiz Result</h1>
 
         <div className='result flex-center'>
             <div className='flex'>
@@ -67,8 +67,8 @@ export default function QuizResult() {
             </div>
         </div>
 
-        <div className="start">
-            <Link className='btn' to={'/'} onClick={onRestart}>Restart</Link>
+        <div className="btn">
+            <Link className='' to={'/quiz'} onClick={onRestart}>Restart</Link>
         </div>
 
         <div className="container">

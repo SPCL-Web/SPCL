@@ -16,4 +16,5 @@ router.route('/result')
         .post(controller.storeResult)
         .delete(controller.dropResult)
 
+router.put('/addAnswer', controller.addAnswer)
 export default router;
